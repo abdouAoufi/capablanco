@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+      * {
+        font-family: "Ubuntu", sans-serif !important;
+      }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body
@@ -16,44 +22,20 @@
       style="background-image: url('bg.svg')"
     >
       <!--Nav-->
-      <div class="w-full container mx-auto p-6">
+      <nav class="w-full container mx-auto p-6 border-b-2">
         <div class="w-full flex items-center justify-between">
           <a
             class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             href="#"
           >
-            <svg
-              class="h-8 fill-current text-indigo-600 pr-2"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path
-                d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm-5.6-4.29a9.95 9.95 0 0 1 11.2 0 8 8 0 1 0-11.2 0zm6.12-7.64l3.02-3.02 1.41 1.41-3.02 3.02a2 2 0 1 1-1.41-1.41z"
-              />
-            </svg>
-            APP
+            <img src="./images/logo.png" class="w-36" alt="" />
           </a>
 
           <div class="flex w-1/2 justify-end content-center">
             <a
-              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
-              data-tippy-content="@twitter_handle"
-              href="https://twitter.com/intent/tweet?url=#"
-            >
-              <svg
-                class="fill-current h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-              >
-                <path
-                  d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
-                ></path>
-              </svg>
-            </a>
-            <a
-              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+              class="inline-block text-blue-300 no-underline hover:text-blue-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
               data-tippy-content="#facebook_id"
-              href="https://www.facebook.com/sharer/sharer.php?u=#"
+              href="https://www.facebook.com/capa.blanco.alg"
             >
               <svg
                 class="fill-current h-6"
@@ -67,56 +49,53 @@
             </a>
           </div>
         </div>
-      </div>
+      </nav>
 
       <!--Main-->
       <div
-        class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+        class="container pt-16 md:pt-24 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
       >
         <!--Left Col-->
         <div
-          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden pl-8"
         >
           <h1
-            class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1"
+            class="my-4 text-3xl md:text-5xl text-blue-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1"
           >
-            Main Hero Message to sell your app
+            Eurl Haddak
           </h1>
           <p
             class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle"
           >
-            Sub-hero message, not too long and not too short. Make it just
-            right!
+            Production des mortiers à sec(ciment colle, pate à joint,ciment
+            prompt,monocouche....) -Import/Export Mortier à sec
           </p>
 
-          <p
-            class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"
-          >
-            Download our app:
-          </p>
-          <div
-            class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in"
-          >
-            <img
-              src="https://scontent-frt3-2.xx.fbcdn.net/v/t39.30808-6/316218069_119910060921400_6302294823608618867_n.jpg?stp=dst-jpg_s600x600&_nc_cat=107&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGuF3Jue29fI-Qfnu3KscGbQrBYIpKCKA9CsFgikoIoD2aj8_zNRZf8hdYjaGATl7UopK6rd7DNpZHyHp_x_Rch&_nc_ohc=NSWxp2CG2lYAX9gpirH&_nc_ht=scontent-frt3-2.xx&oh=00_AfDko0XMcb7lnTvwsHTbzmbLz-31RDmUK8BNOSm6ihHFKQ&oe=63A40997"
-              class="h-36 pr-4 bounce-top-icons"
-            />
-            <img src="Play Store.svg" class="h-12 bounce-top-icons" />
-          </div>
+          <a href="">
+            <button
+              class="px-12 py-4 bg-blue-800 font-semibold text-white white rounded shadow-xl"
+            >
+              Contact us
+            </button>
+          </a>
         </div>
 
         <!--Right Col-->
         <div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
-          <img
-            class="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
-            src="devices.svg"
-          />
+          <div class="flex justify-center w-full">
+            <img
+              class="w-2/6 ml-24"
+              src="https://bricopacdzdd7e4.zapwp.com/q:intelligent/retina:false/webp:true/w:314/url:https://bricopac.dz/assili/2020/01/CAPA-25.jpg"
+              alt=""
+            />
+          </div>
         </div>
 
         <!--Footer-->
         <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
           <a class="text-gray-500 no-underline hover:no-underline" href="#"
-            >&copy; App 2019</a
+            >&copy; villa N°04 rue moussa hamadache hassan badi belfort
+            16004 El Harrach</a
           >
         </div>
       </div>
